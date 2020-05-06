@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import ViewerTemplate from './components/ViewerTemplate/ViewerTemplate';
-
+import SpaceNavigator from './components/SpaceNavigator/SpaceNavigator';
+import Viewer from './components/Viewer';
 
 class App extends Component {
   render() {
     return (
-      <ViewerTemplate></ViewerTemplate>
+      <ViewerTemplate
+       spaceNavigator={<SpaceNavigator/>}
+       viewer={(
+         <Viewer
+            url="https://apod.nasa.gov/apod/image/1712/GeminidsYinHao1024.jpg"
+            mediaTyp="image"/>
+       )}>
+       </ViewerTemplate>
     );
   }
   

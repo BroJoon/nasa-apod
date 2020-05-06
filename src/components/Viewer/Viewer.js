@@ -6,7 +6,14 @@ const cx = classNames.bind(styles);
 const Viewer = ({mediaType, url, loading}) => {
     return (
         <div className={cx('viewer')}>
-
+            {
+                mediaType === 'image' ? (
+                    <img onClick={() => window.open(url)} src = {url} alt="space"/>
+                    
+                ) : (
+                    <div/>
+                )
+            }
         </div>
     );
 };
