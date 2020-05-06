@@ -12,7 +12,8 @@ const Viewer = ({mediaType, url, loading}) => {
         mediaType === 'image' ? (
           <img onClick={() => window.open(url)} src={url} alt="space"/>
         ) : (
-          <div/>
+          <iframe title="spce-video" src={url} frameBorder="0" gesture="media" 
+          allow="encrypted-media" allowFullScreen></iframe>
         )
       }
     </div>
