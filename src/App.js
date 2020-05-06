@@ -11,9 +11,9 @@ class App extends Component {
        viewer={(
          <Viewer
             url="https://apod.nasa.gov/apod/image/1712/GeminidsYinHao1024.jpg"
-            mediaTyp="image"/>
-       )}>
-       </ViewerTemplate>
+            mediaType="image"/>
+       )}/>
+      
     );
   }
   
